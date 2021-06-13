@@ -1,6 +1,7 @@
 package com.atguigu.gulimall.product.controller;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
@@ -28,18 +29,20 @@ import com.atguigu.common.utils.R;
 @RestController
 @RequestMapping("product/category")
 public class CategoryController {
+    //注入service层
     @Autowired
     private CategoryService categoryService;
 
     /**
-     * 列表
+     * 查出所有分类以及子分类, 以树形结构组装起来列表
      */
-    @RequestMapping("/list")
+    @RequestMapping("/list/tree")
     //@RequiresPermissions("product:category:list")
-    public R list(@RequestParam Map<String, Object> params){
-        PageUtils page = categoryService.queryPage(params);
-
-        return R.ok().put("page", page);
+    public R list(){
+        //调用service层的listWithTree()方法获取所有的分类的三级树形结构
+        List<CategoryEntity> entities = categoryService.listWithTree();
+        //将获取的树形结构entities放入返回的HashMap中 对应的key=data
+        return R.ok().put("data", entities);
     }
 
 
@@ -78,11 +81,15 @@ public class CategoryController {
 
     /**
      * 删除
+     * @RequestBody: 获取请求体, 必须发送POST请求
+     * SprIngMVC自动将请求体的数据(json) 转为对应的对象
      */
     @RequestMapping("/delete")
     //@RequiresPermissions("product:category:delete")
     public R delete(@RequestBody Long[] catIds){
-		categoryService.removeByIds(Arrays.asList(catIds));
+//		categoryService.removeByIds(Arrays.asList(catIds));
+
+		categoryService.removeMenuByIds(Arrays.asList(catIds));
 
         return R.ok();
     }

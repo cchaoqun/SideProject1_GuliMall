@@ -7,15 +7,21 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 127.0.0.1:8848
+        server-addr: 127.0.0.1:8848 #配置nacos注册中心的地址
   application:
-    name: gulimall-product
+    name: gulimall-product #配置服务的名称
 
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml #扫描类路径下的 mapper文件夹下的所有文件夹中的xml文件
   global-config:
     db-config:
       id-type: auto
+      logic-delete-value: 1         #逻辑删除 已经删除了用1
+      logic-not-delete-value: 0     #逻辑删除 未删除了用0
 
 server:
   port: 10000
+
+logging:
+  level:
+    com.atguigu.gulimall: debug

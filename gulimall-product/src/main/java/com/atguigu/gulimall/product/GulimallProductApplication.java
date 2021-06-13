@@ -22,12 +22,16 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  *              告诉Mybatis-plus映射文件位置
  *              配置主键自增
  *
- *
+ * 2. 逻辑删除
+ *      https://mp.baomidou.com/guide/logic-delete.html#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95
+ *      1.配置全局的逻辑删除规则(省略)
+ *      2.配置逻辑删除的组件Bean(省略)
+ *      3.给Bean上加上逻辑删除注解 @TableLogic
  *
  *
  *
  */
-@EnableDiscoveryClient
+@EnableDiscoveryClient //开启服务的注册与发现
 @MapperScan("com.atguigu.gulimall.product.dao") //告诉mybatis-plus在这个路径找到我们的Mapper接口
 @SpringBootApplication
 public class GulimallProductApplication {

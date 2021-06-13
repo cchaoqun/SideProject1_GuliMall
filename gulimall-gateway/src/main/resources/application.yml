@@ -10,3 +10,23 @@ spring:
           uri: http://www.qq.com
           predicates:
           - Query=url,qq            #如果请求参数包含 url 并且url参数的值为 qq 就去http://www.qq.com
+        - id: product_route         #从网关-->renren-fast-->product
+          uri: lb://gulimall-product #renren-fast的请求负载均衡到 product微服务
+          predicates:
+            - Path=/api/product/**    #/api/product 约定这个路径开头的都是商品微服务的请求
+          filters:
+            - RewritePath=/api/?(?<segment>.*), /$\{segment} # filter 路径重写去掉/api前缀 就能访问商品服务了
+        - id: admin_route
+          uri: lb://renren-fast     #lb代表负载均衡, 所有前端的后台对应请求都负载均衡到renren-fast服务(验证码)
+          predicates:
+            - Path=/api/**
+          filters:
+            - RewritePath=/api/?(?<segment>.*), /renren-fast/$\{segment} #路径替换 这样才能访问到后台的renren-fast获取验证码
+
+## 前端项目, 访问路径带上/api前缀
+## 实际访问的地址 http://localhost:88/api/captcha.jpg?uuid=8a15b0a0-baa7-46c2-8ea5-b7f91292ba56
+## 我们希望访问的地址  http://localhost:8080/renren-fast/captcha.jpg
+  #通过filter RewritePath将所有的/api/** 转变成/renren-fast/** 相当于将/api替换成了 /renren-fast
+# http://localhost:88/api/product/category/list/tree --> http://localhost:10000/product/category/list/tree
+
+
