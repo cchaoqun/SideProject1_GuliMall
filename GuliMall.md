@@ -13,9 +13,9 @@ redis:
 
 ## 项目前置知识
 
-![image-20210609150002196](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609150002196.png)
+![image-20210609150002196](GuliMall.assets/image-20210609150002196.png)
 
-![image-20210609150013014](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609150013014.png)
+![image-20210609150013014](GuliMall.assets/image-20210609150013014.png)
 
 ## 分布式概念
 
@@ -39,13 +39,13 @@ redis:
 
 ## 项目架构图
 
-![image-20210609145644972](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609145644972.png)
+![image-20210609145644972](GuliMall.assets/image-20210609145644972.png)
 
 - B2C模式(Business to Costumer)
 
 ## 微服务划分图
 
-![image-20210609152630172](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609152630172.png)
+![image-20210609152630172](GuliMall.assets/image-20210609152630172.png)
 
 
 
@@ -67,13 +67,13 @@ redis:
 - 验证vagrant是否安装成功
 
   - 命令行输入 vagrant 出现提示说明安装成功
-  - ![image-20210609153823300](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609153823300.png)
+  - ![image-20210609153823300](GuliMall.assets/image-20210609153823300.png)
 
 - 利用vagrant初始化 Linux系统
 
   - 根据vagrant 镜像仓库的提示 
 
-  - ![image-20210609153958702](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609153958702.png)
+  - ![image-20210609153958702](GuliMall.assets/image-20210609153958702.png)
 
   - ```shell
     #1. 命令行输入 
@@ -117,23 +117,23 @@ redis:
     
     ```
 
-  - ![image-20210609154557678](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609154557678.png)
+  - ![image-20210609154557678](GuliMall.assets/image-20210609154557678.png)
 
-  - <img src="D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609155609039.png" alt="image-20210609155609039" style="zoom:50%;" />
+  - <img src="GuliMall.assets/image-20210609155609039.png" alt="image-20210609155609039" style="zoom:50%;" />
 
-  - ![image-20210609155627663](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609155627663.png)
+  - ![image-20210609155627663](GuliMall.assets/image-20210609155627663.png)
 
-  - ![image-20210609155655474](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609155655474.png)
+  - ![image-20210609155655474](GuliMall.assets/image-20210609155655474.png)
 
-  - <img src="D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609155750115.png" alt="image-20210609155750115" style="zoom:50%;" />
+  - <img src="GuliMall.assets/image-20210609155750115.png" alt="image-20210609155750115" style="zoom:50%;" />
 
 ## 网络地址转换-端口转发
 
-![image-20210609160505771](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609160505771.png)
+![image-20210609160505771](GuliMall.assets/image-20210609160505771.png)
 
 - 默认的端口转发的方式, 我们每在虚拟机安装一个软件都需要设置一个端口映射
   - 如安装了MySQL, 需要将主机的3333端口映射到虚拟机的3306端口, 这样用户通过访问我们主机的3333端口就可以访问虚拟机的3306端口, 但是每安装一个新的的软件都需要做这样的映射
-  - ![image-20210609160758396](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609160758396.png)
+  - ![image-20210609160758396](GuliMall.assets/image-20210609160758396.png)
 
 - 希望给虚拟机一个固定的 ip 地址, 这样可以通过ip 和window宿主机Ping通
 
@@ -168,27 +168,27 @@ ping 192.168.0.104
 
 - 查看VagrantFile的默认网路ip
 
-<img src="D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609161056616.png" alt="image-20210609161056616" style="zoom:150%;" />
+<img src="GuliMall.assets/image-20210609161056616.png" alt="image-20210609161056616" style="zoom:150%;" />
 
 - 查看VirtualBox的网络ip	
 
-![image-20210609161410835](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609161410835.png)
+![image-20210609161410835](GuliMall.assets/image-20210609161410835.png)
 
 - 修改虚拟机的 ip为VirtualBox一个局域网下的子网
 
-![image-20210609161522455](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609161522455.png)
+![image-20210609161522455](GuliMall.assets/image-20210609161522455.png)
 
 - 查看主机的 ip
 
-![image-20210609162030335](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609162030335.png)
+![image-20210609162030335](GuliMall.assets/image-20210609162030335.png)
 
 - 测试 windows --ping--> VM
 
-![image-20210609162131677](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609162131677.png)
+![image-20210609162131677](GuliMall.assets/image-20210609162131677.png)
 
 - 测试 VM--ping--> Wondows
 
-![image-20210609162256334](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609162256334.png)
+![image-20210609162256334](GuliMall.assets/image-20210609162256334.png)
 
 - 配置虚拟机的 固定 ip成功
 
@@ -248,19 +248,19 @@ sudo systemctl enable docker
 
 - 卸载docker
 
-![image-20210609163749025](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609163749025.png)
+![image-20210609163749025](GuliMall.assets/image-20210609163749025.png)
 
 - docker下载成功
 
-![image-20210609164053918](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609164053918.png)
+![image-20210609164053918](GuliMall.assets/image-20210609164053918.png)
 
 - docker配置镜像仓库(阿里与)
 
-![image-20210609164249969](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609164249969.png)
+![image-20210609164249969](GuliMall.assets/image-20210609164249969.png)
 
 - docker 安装成功
 
-![image-20210609164644115](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609164644115.png)
+![image-20210609164644115](GuliMall.assets/image-20210609164644115.png)
 
 
 
@@ -280,9 +280,9 @@ sudo systemctl restart docker
 
 
 
-![image-20210609165859951](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609165859951.png)
+![image-20210609165859951](GuliMall.assets/image-20210609165859951.png)
 
-![image-20210609170055340](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609170055340.png)
+![image-20210609170055340](GuliMall.assets/image-20210609170055340.png)
 
 
 
@@ -374,15 +374,15 @@ skip-name-resolve
 
 
 
-![image-20210609172103180](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609172103180.png)
+![image-20210609172103180](GuliMall.assets/image-20210609172103180.png)
 
 
 
-![image-20210609172746538](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609172746538.png)
+![image-20210609172746538](GuliMall.assets/image-20210609172746538.png)
 
 - Docker容器文件挂载与端口映射
 
-![image-20210609182307029](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609182307029.png)
+![image-20210609182307029](GuliMall.assets/image-20210609182307029.png)
 
 ## 安装redis
 
@@ -425,7 +425,7 @@ mysql
 
 - 下载 Redis Desktop Manager
 
-![image-20210609194039576](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609194039576.png)
+![image-20210609194039576](GuliMall.assets/image-20210609194039576.png)
 
 - redis官网
   - https://redis.io/documentation
@@ -471,7 +471,7 @@ mysql
 - IDEA
   - 修改maven在IDEA的配置
 
-![image-20210609202956704](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609202956704.png)
+![image-20210609202956704](GuliMall.assets/image-20210609202956704.png)
 
 - 安装lombok插件
 
@@ -498,7 +498,7 @@ mysql
 
 - 配置Github仓库
 
-![image-20210609205353731](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609205353731.png)
+![image-20210609205353731](GuliMall.assets/image-20210609205353731.png)
 
 
 
@@ -552,11 +552,11 @@ mysql
 2. 创建数据库
 3. 根据sql文件创建各个数据库各自的表
 
-![image-20210609215616374](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609215616374.png)
+![image-20210609215616374](GuliMall.assets/image-20210609215616374.png)
 
-![image-20210609215758760](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609215758760.png)
+![image-20210609215758760](GuliMall.assets/image-20210609215758760.png)
 
-![image-20210609221850014](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609221850014.png)
+![image-20210609221850014](GuliMall.assets/image-20210609221850014.png)
 
 ## 人人开源脚手架
 
@@ -579,7 +579,7 @@ mysql
 3. 启动程序
 4. 访问
    1. http://localhost:8080/renren-fast/
-   2. ![image-20210609235747941](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210609235747941.png)
+   2. ![image-20210609235747941](GuliMall.assets/image-20210609235747941.png)
 
 ### 配置前端
 
@@ -606,7 +606,7 @@ password: admin
 
 - 点击验证码, 后台程序会对应发送验证码
 
-![image-20210610001940430](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610001940430.png)
+![image-20210610001940430](GuliMall.assets/image-20210610001940430.png)
 
 
 
@@ -628,7 +628,7 @@ password: admin
     - 数据库名: gulimall_pms(还有剩余的4个)
     - username: root
     - password: root
-    - ![image-20210610150602287](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610150602287.png)
+    - ![image-20210610150602287](GuliMall.assets/image-20210610150602287.png)
   - generator.properties
     - 主路径
     - 包名
@@ -636,30 +636,30 @@ password: admin
     - 作者
     - 邮箱
     - 表前缀, 如 gulimall_pms数据库中的表前缀全部为pms_
-    - ![image-20210610151302772](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610151302772.png)
+    - ![image-20210610151302772](GuliMall.assets/image-20210610151302772.png)
   - 运行
     - http://localhost:80/
-    - ![image-20210610151404427](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610151404427.png)
-    - ![image-20210610151532099](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610151532099.png)
+    - ![image-20210610151404427](GuliMall.assets/image-20210610151404427.png)
+    - ![image-20210610151532099](GuliMall.assets/image-20210610151532099.png)
   - 勾选全部的表, 生成代码,打开(这里注意调整一页30, 这样全部的表才会被勾选)
     - 生成了SQL文件
-      - ![image-20210610152011366](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610152011366.png)
+      - ![image-20210610152011366](GuliMall.assets/image-20210610152011366.png)
     - main.resource.mapper.product中有DAO对应的xml文件
-      - ![image-20210610152023529](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610152023529.png)
+      - ![image-20210610152023529](GuliMall.assets/image-20210610152023529.png)
     - 按照我们之前在generator.properties文件中指定的类路径包名和模块名, 生成了对应的dao.entity service controller类
-      - ![image-20210610151955491](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610151955491.png)
+      - ![image-20210610151955491](GuliMall.assets/image-20210610151955491.png)
     - 将生成的main文件粘贴到对应木块的文件夹, 替换掉我们微服务模块的main文件夹, 这样我们就不要手写Dao层对应的代码了
       - 覆盖后, 模块的目录
-      - ![image-20210610152437760](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610152437760.png)
+      - ![image-20210610152437760](GuliMall.assets/image-20210610152437760.png)
 
 ### 配置工具类模块
 
 但是生成的代码中存在很多MyBatis-Plus, Shiro, 等工具类的依赖,我们需要在父项目创建一个模块为这些依赖提供服务
 
 - 创建工具类模块 gulimall-common
-  - ![image-20210610153009363](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610153009363.png)
+  - ![image-20210610153009363](GuliMall.assets/image-20210610153009363.png)
 - 在其他子模块下引入该模块的依赖
-  - ![image-20210610153002200](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610153002200.png)
+  - ![image-20210610153002200](GuliMall.assets/image-20210610153002200.png)
 - gulimall-common模块会创建公共的一些工具类 bean等
 
 #### Mybatis-plus
@@ -689,19 +689,19 @@ https://mp.baomidou.com/guide/install.html#release
 
 #### 工具类
 
-![image-20210610153740975](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610153740975.png)
+![image-20210610153740975](GuliMall.assets/image-20210610153740975.png)
 
 - service包下的impl类缺少对应的工具类依赖
 - 我们在gulimall-common模块下创建对应的路径, 将需要的工具类从renren-fast模块下拿过来即可
   - 创建对应目录
-  - ![image-20210610153946565](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610153946565.png)
+  - ![image-20210610153946565](GuliMall.assets/image-20210610153946565.png)
   - 从renren-fast粘贴对应工具类 PageUtils Query R
-  - ![image-20210610154041006](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610154041006.png)
+  - ![image-20210610154041006](GuliMall.assets/image-20210610154041006.png)
 
 ##### R类的依赖导入
 
 - 从renren-fast中引入的R类, 依赖了 HttpComponents组件, 需要Maven仓库中的依赖导入到模块
-  - ![image-20210610154432051](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610154432051.png)
+  - ![image-20210610154432051](GuliMall.assets/image-20210610154432051.png)
 
   - ```xml
     <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
@@ -719,7 +719,7 @@ https://mp.baomidou.com/guide/install.html#release
 
   - 对应的版本号是2.6
 
-  - ![image-20210610155001560](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610155001560.png)
+  - ![image-20210610155001560](GuliMall.assets/image-20210610155001560.png)
 
   - ```xml
     <!--Query类依赖的commons.lang.StringUtils-->
@@ -737,18 +737,18 @@ https://mp.baomidou.com/guide/install.html#release
 
 - Constant类也在renren-fast utils包中, 复制过来
 
-- ![image-20210610154754437](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610154754437.png)
+- ![image-20210610154754437](GuliMall.assets/image-20210610154754437.png)
 
 #### controller的@RequiresPermissions
 
 - 这是Shiro的注解, 我们后面会使用Spring Security 这里可以先删除
 - 我们需要调整教授叫renren-generator不生这个注解]
 - 逆向工程的核心是template包下的这些模板
-  - ![image-20210610155853241](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610155853241.png)
+  - ![image-20210610155853241](GuliMall.assets/image-20210610155853241.png)
 - 将Controller文件中@RequiresPermissions注解注释掉
-  - ![image-20210610160050249](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610160050249.png)
+  - ![image-20210610160050249](GuliMall.assets/image-20210610160050249.png)
 - 删除这个注解的引用
-  - ![image-20210610160121970](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610160121970.png)
+  - ![image-20210610160121970](GuliMall.assets/image-20210610160121970.png)
 
 
 
@@ -780,7 +780,7 @@ Tomcat中带有servlet, scope改成provided打包的时候不会带上这个依�
 - 将生成的文件中的main替换对应模块下的main
 - 再次查看Controller类, 里面的@RequiresPermissions注解已经被注释掉了
 
-![image-20210610160753996](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610160753996.png)
+![image-20210610160753996](GuliMall.assets/image-20210610160753996.png)
 
 #### 结束所有的DAO生成的方法的调整
 
@@ -808,13 +808,13 @@ Tomcat中带有servlet, scope改成provided打包的时候不会带上这个依�
 
          1. 查看MySQL数据库的信息
 
-         2. ![image-20210610162432187](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610162432187.png)
+         2. ![image-20210610162432187](GuliMall.assets/image-20210610162432187.png)
 
          3. 导入对应版本的MySQL的驱动
 
             1. Maven没有对对应完全一致的版本, 查看MySQL官方的解释
 
-            2. ![image-20210610162700852](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610162700852.png)
+            2. ![image-20210610162700852](GuliMall.assets/image-20210610162700852.png)
 
             3. 5.1 8.0都支持了5.7, 推荐使用8.0
 
@@ -845,7 +845,7 @@ Tomcat中带有servlet, scope改成provided打包的时候不会带上这个依�
 
       1. 使用@MapperScan告诉Mybatis-plus Mapper接口的位置
 
-         1. ![image-20210610164242363](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610164242363.png)
+         1. ![image-20210610164242363](GuliMall.assets/image-20210610164242363.png)
 
       2. 告诉Mybatis-plus映射文件位置
 
@@ -860,15 +860,15 @@ Tomcat中带有servlet, scope改成provided打包的时候不会带上这个依�
 
          1. entitye目录下的实体类, @TableId表示是主键
 
-            1. ![image-20210610164711674](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610164711674.png)
+            1. ![image-20210610164711674](GuliMall.assets/image-20210610164711674.png)
 
          2. 但是点进去发现默认不是自增的  IdType>NONE
 
-            1. ![image-20210610164734803](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610164734803.png)
+            1. ![image-20210610164734803](GuliMall.assets/image-20210610164734803.png)
 
          3. 点进IdType发现又自增的选项, AUTO
 
-            1. ![image-20210610164814704](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610164814704.png)
+            1. ![image-20210610164814704](GuliMall.assets/image-20210610164814704.png)
 
          4. 我们在配置文件中配置主键自增
 
@@ -926,14 +926,14 @@ Tomcat中带有servlet, scope改成provided打包的时候不会带上这个依�
 
             1. 增
                1. 控制台输出信息
-                  1. ![image-20210610165930918](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610165930918.png)
+                  1. ![image-20210610165930918](GuliMall.assets/image-20210610165930918.png)
                2. 查看数据库
-                  1. ![image-20210610170242640](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610170242640.png)
+                  1. ![image-20210610170242640](GuliMall.assets/image-20210610170242640.png)
             2. 更新
-               1. ![image-20210610170620424](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610170620424.png)
+               1. ![image-20210610170620424](GuliMall.assets/image-20210610170620424.png)
             3. 查询
                1. 控制台输出
-                  1. ![image-20210610171138143](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610171138143.png)
+                  1. ![image-20210610171138143](GuliMall.assets/image-20210610171138143.png)
 
 
 
@@ -942,10 +942,10 @@ Tomcat中带有servlet, scope改成provided打包的时候不会带上这个依�
 1. 修改renren-generator generator.properties配置文件
    1. 模块
    2. 表前缀
-   3. ![image-20210610172224837](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610172224837.png)
+   3. ![image-20210610172224837](GuliMall.assets/image-20210610172224837.png)
 2.  application.yml
    1. 数据源连接的数据库
-   2. ![image-20210610172233825](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610172233825.png)
+   2. ![image-20210610172233825](GuliMall.assets/image-20210610172233825.png)
 3. 运行
 4. 访问80端口
    1. 选中所有的表, 点击生成代码
@@ -956,9 +956,9 @@ Tomcat中带有servlet, scope改成provided打包的时候不会带上这个依�
 9. 运行主程序
 10. 测试
     1. 访问某个controller指定的访问路径
-    2. ![image-20210610174721674](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610174721674.png)
+    2. ![image-20210610174721674](GuliMall.assets/image-20210610174721674.png)
     3. 访问 http://localhost:8080/coupon/coupon/list
-    4. ![image-20210610174802032](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610174802032.png)
+    4. ![image-20210610174802032](GuliMall.assets/image-20210610174802032.png)
 
 #### 为所有微服务配置端口号
 
@@ -978,7 +978,7 @@ server:
 
 # 微服务环境搭建
 
-![image-20210610194111599](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610194111599.png)
+![image-20210610194111599](GuliMall.assets/image-20210610194111599.png)
 
 ## SpringCloud-Alibaba
 
@@ -1025,7 +1025,7 @@ https://github.com/alibaba/nacos/releases/tag/1.1.3
 - 我们希望把微服务注册到注册中心首先需要有一个Nacos 服务器, 
 - 下载和视频一致的 1.1.3 版本的Nacos Server
 - 解压后打开bin目录下的startup.cmd 就开启了 NacosServer 
-  - ![image-20210610195450549](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610195450549.png)
+  - ![image-20210610195450549](GuliMall.assets/image-20210610195450549.png)
 
 ### 在应用的配置文件中配置 Nacos Server 地址
 
@@ -1060,7 +1060,7 @@ http://127.0.0.1:8848/nacos
 - username: nacos
 - password: nacos
 
-![image-20210610200331539](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610200331539.png)
+![image-20210610200331539](GuliMall.assets/image-20210610200331539.png)
 
 - 暂时显示没有服务, 因为还没有为服务配置名称
 
@@ -1074,7 +1074,7 @@ application:
     name: gulimall-coupon
 ```
 
-![image-20210610200722957](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610200722957.png)
+![image-20210610200722957](GuliMall.assets/image-20210610200722957.png)
 
 
 
@@ -1181,11 +1181,11 @@ public interface CouponFeignService {
   - 通过CouponFeignService调用了CouponController中的方法 返回了一个hashmap
   - hashMap对象中包含一个key为coupons,value为CouponEntity实体类对象
   - 通过key获取这个对象放入我们自己的hashmap对象中并以Json的形式显示到页面
-  - ![image-20210610205526846](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610205526846.png)
+  - ![image-20210610205526846](GuliMall.assets/image-20210610205526846.png)
 - 测试被调用服务下线时的调用情况, 关闭coupon服务
-  - ![image-20210610205651855](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610205651855.png)
+  - ![image-20210610205651855](GuliMall.assets/image-20210610205651855.png)
   - 再次调用
-  - ![image-20210610205711684](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610205711684.png)
+  - ![image-20210610205711684](GuliMall.assets/image-20210610205711684.png)
   - 重新开启后又可以调用
 
 
@@ -1233,9 +1233,9 @@ spring.cloud.nacos.config.server-addr=127.0.0.1:8848
 ```
 
 - 访问 http://localhost:7000/coupon/coupon/test
-- ![image-20210610212900797](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610212900797.png)
+- ![image-20210610212900797](GuliMall.assets/image-20210610212900797.png)
 
-![image-20210610212850969](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610212850969.png)
+![image-20210610212850969](GuliMall.assets/image-20210610212850969.png)
 
 - 但是如果我们想要动态的实时获取这些配置文件里的值, 如果需要修改的话, 就需要修改配置文件的值, 重新打包, 重启项目, 十分麻烦耗时
 - 如果我们把配置文件放在配置中心, 服务自己从配置中心获取对应的配置文件, 我们只需要在配置中心修改, 服务获取到的值也就可以动态改变了
@@ -1246,25 +1246,25 @@ spring.cloud.nacos.config.server-addr=127.0.0.1:8848
 
 - 服务启动的日志中, 有这样一段表示可以从nacos配置中心获取到gulimall-coupon.properties这样一个配置文件, 文件名默认是 服务名称.properties
 
-![image-20210610213210998](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610213210998.png)
+![image-20210610213210998](GuliMall.assets/image-20210610213210998.png)
 
 - 我们可以在配置中心添加这样一个配置名为 gulimall-coupon.properties 的配置文件
 - 内容为我们想要在application.properties中放入的数据
 - 点击发布
 
-![image-20210610213659035](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610213659035.png)
+![image-20210610213659035](GuliMall.assets/image-20210610213659035.png)
 
 - 重启服务
 - 可以获取配置中心新建的配置文件内容
 
-![image-20210610213725263](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610213725263.png)
+![image-20210610213725263](GuliMall.assets/image-20210610213725263.png)
 
-![image-20210610213756213](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610213756213.png)
+![image-20210610213756213](GuliMall.assets/image-20210610213756213.png)
 
 - 如果我们想要修改配置中心的配置文件内容, 并且服务也可以动态获取而不需要重启
 - 需要在调用的Controller类上面添加 @RefreshScop注解
 
-![image-20210610214020450](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610214020450.png)
+![image-20210610214020450](GuliMall.assets/image-20210610214020450.png)
 
 
 
@@ -1296,7 +1296,7 @@ spring.cloud.nacos.config.server-addr=127.0.0.1:8848
 
 1. 开发(dev) 测试(test) 发布(prop) 创建三个命名空间
 
-   1. ![image-20210610215701965](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610215701965.png)
+   1. ![image-20210610215701965](GuliMall.assets/image-20210610215701965.png)
 
    2. 在prop命名空间创建一个相同的配置文件, 也包含相同的名称但是对应的内容是上线后所需要的信息
 
@@ -1304,14 +1304,14 @@ spring.cloud.nacos.config.server-addr=127.0.0.1:8848
 
    4. 我们需要在bootstrap.properties中添加指定的命名空间(通过命名空间的id),这样就会获取对应命名空间的配置文件的信息
 
-   5. ![image-20210610215923027](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610215923027.png)
+   5. ![image-20210610215923027](GuliMall.assets/image-20210610215923027.png)
 
    6. ```properties
       #想要使用哪个命名空间的配置,就在这里配置命名等于对应的uuid
       spring.cloud.nacos.config.namespace=c4f85683-4dae-4199-abb2-673c786365a9
       ```
 
-   7. ![image-20210610220028471](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610220028471.png)
+   7. ![image-20210610220028471](GuliMall.assets/image-20210610220028471.png)
 
 2. 每一个微服务之间互相隔离配置,每一个微服务都创建自己的命名空间, 只加载自己的命名空间
 
@@ -1337,7 +1337,7 @@ spring.cloud.nacos.config.server-addr=127.0.0.1:8848
 
 - 创建配置的时候输入Group
 
-  - ![image-20210610221646435](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610221646435.png)
+  - ![image-20210610221646435](GuliMall.assets/image-20210610221646435.png)
 
 - 可以在应用的配置文件bootstrap.properties中指定配置组
 
@@ -1345,16 +1345,16 @@ spring.cloud.nacos.config.server-addr=127.0.0.1:8848
     spring.cloud.nacos.config.group=1111
     ```
 
-  ![image-20210610221833852](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610221833852.png)
+  ![image-20210610221833852](GuliMall.assets/image-20210610221833852.png)
 
 > 我们项目的配置情况
 
 - 每个微服务创建自己的命名空间
 - 使用配置分组区分环境, dev test, prod
 
-![image-20210610222225439](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610222225439.png)
+![image-20210610222225439](GuliMall.assets/image-20210610222225439.png)
 
-![image-20210610222205404](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610222205404.png)![image-20210610222213417](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610222213417.png)
+![image-20210610222205404](GuliMall.assets/image-20210610222205404.png)![image-20210610222213417](GuliMall.assets/image-20210610222213417.png)
 
 
 
@@ -1364,7 +1364,7 @@ spring.cloud.nacos.config.server-addr=127.0.0.1:8848
 
 - 拆分成datasource mybatis other三个部分, 每个部分更加明确自己的配置目的便于管理
 
-  - ![image-20210610233117680](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610233117680.png)
+  - ![image-20210610233117680](GuliMall.assets/image-20210610233117680.png)
 
 - 在bootstrap.properties中配置从配置中心指定命名空间读取这些分解的yaml配置文件
 
@@ -1394,13 +1394,13 @@ spring.cloud.nacos.config.server-addr=127.0.0.1:8848
 
 - 这样在加载的时候, 就会获取到这些指定的配置文件
 
-![image-20210610232830030](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610232830030.png)
+![image-20210610232830030](GuliMall.assets/image-20210610232830030.png)
 
-![image-20210610232838572](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610232838572.png)
+![image-20210610232838572](GuliMall.assets/image-20210610232838572.png)
 
 - 测试
   - 访问 http://localhost:7000/coupon/coupon/list
-  - ![image-20210610233411900](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610233411900.png)
+  - ![image-20210610233411900](GuliMall.assets/image-20210610233411900.png)
 
 #### 同时加载多个配置集总结
 
@@ -1416,9 +1416,9 @@ spring.cloud.nacos.config.server-addr=127.0.0.1:8848
 
 https://spring.io/projects/spring-cloud-gateway
 
-![image-20210610234101644](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610234101644.png)
+![image-20210610234101644](GuliMall.assets/image-20210610234101644.png)
 
-<img src="D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610234126946.png" alt="image-20210610234126946" style="zoom:50%;" />
+<img src="GuliMall.assets/image-20210610234126946.png" alt="image-20210610234126946" style="zoom:50%;" />
 
 
 
@@ -1428,7 +1428,7 @@ https://spring.io/projects/spring-cloud-gateway
 - **Predicate**: This is a [Java 8 Function Predicate](https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html). The input type is a [Spring Framework `ServerWebExchange`](https://docs.spring.io/spring/docs/5.0.x/javadoc-api/org/springframework/web/server/ServerWebExchange.html). This lets you match on anything from the HTTP request, such as headers or parameters.
 - **Filter**: These are instances of [`GatewayFilter`](https://github.com/spring-cloud/spring-cloud-gateway/tree/main/spring-cloud-gateway-server/src/main/java/org/springframework/cloud/gateway/filter/GatewayFilter.java) that have been constructed with a specific factory. Here, you can modify requests and responses before or after sending the downstream request.
 
-![image-20210610234647056](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210610234647056.png)
+![image-20210610234647056](GuliMall.assets/image-20210610234647056.png)
 
 - 客户端请求到达网关
 - 网关通过请求的参数信息(请求头...)判断是否能通过某个Route的映射规则到达某个服务
@@ -1467,7 +1467,7 @@ https://spring.io/projects/spring-cloud-gateway
 
    1. 因为我们引入了common模块的依赖, 而common模块中包含mybatis依赖, 所以会有数据库相关的默认配置
 
-      1. ![image-20210611001207726](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210611001207726.png)
+      1. ![image-20210611001207726](GuliMall.assets/image-20210611001207726.png)
 
    2. 我们需要排除这些与数据库相关的依赖
 
@@ -1504,18 +1504,18 @@ spring:
 - 测试访问带参数 url=qq访问成功
   - http://localhost:88/?url=qq
 
-![image-20210611003148863](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210611003148863.png)
+![image-20210611003148863](GuliMall.assets/image-20210611003148863.png)
 
 - 测试访问带参数 url=baidu访问成功
   - http://localhost:88/?url=baidu
 
-![image-20210611003312339](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210611003312339.png)
+![image-20210611003312339](GuliMall.assets/image-20210611003312339.png)
 
 # 前端基础知识
 
 ## 前端技术栈类比
 
-![image-20210611113148423](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210611113148423.png)
+![image-20210611113148423](GuliMall.assets/image-20210611113148423.png)
 
 
 
@@ -3087,11 +3087,11 @@ npm run dev
 http://localhost:8080/
 ```
 
-![image-20210611161628397](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210611161628397.png)
+![image-20210611161628397](GuliMall.assets/image-20210611161628397.png)
 
 
 
-![image-20210611162011031](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210611162011031.png)
+![image-20210611162011031](GuliMall.assets/image-20210611162011031.png)
 
 ### Hello
 
@@ -3223,7 +3223,7 @@ export default {
 
 - 默认选择了 2, 因为data对象中radio: "2"
 
-![image-20210611165043151](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210611165043151.png)
+![image-20210611165043151](GuliMall.assets/image-20210611165043151.png)
 
 
 
@@ -3354,11 +3354,11 @@ https://element.eleme.cn/#/zh-CN/component/container
 
 
 
-![image-20210611171848329](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210611171848329.png)
+![image-20210611171848329](GuliMall.assets/image-20210611171848329.png)
 
-![image-20210611171908197](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210611171908197.png)
+![image-20210611171908197](GuliMall.assets/image-20210611171908197.png)
 
-![image-20210611171913825](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210611171913825.png)
+![image-20210611171913825](GuliMall.assets/image-20210611171913825.png)
 
 
 
@@ -3458,7 +3458,7 @@ List<CategoryEntity> listWithTree();
 
 - 查询出来的结果按照1,2,3级形成了tree
 
-![image-20210611221244295](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210611221244295.png)
+![image-20210611221244295](GuliMall.assets/image-20210611221244295.png)
 
 
 
@@ -3485,21 +3485,21 @@ http://localhost:8001/#/login
 
 localhost:8001 --> 系统管理-->菜单管理-->新增
 
-<img src="D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613172548814.png" alt="image-20210613172548814" style="zoom: 67%;" />
+<img src="GuliMall.assets/image-20210613172548814.png" alt="image-20210613172548814" style="zoom: 67%;" />
 
 - 新增菜单
   - 刷新，看到左侧多了商品系统，添加的这个菜单其实是添加到了`guli-admin.sys_menu`表里
 
-<img src="D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613172642194.png" alt="image-20210613172642194" style="zoom:67%;" />
+<img src="GuliMall.assets/image-20210613172642194.png" alt="image-20210613172642194" style="zoom:67%;" />
 
 - 数据库中增加了
 
-<img src="D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613185242513.png" alt="image-20210613185242513" style="zoom:67%;" />
+<img src="GuliMall.assets/image-20210613185242513.png" alt="image-20210613185242513" style="zoom:67%;" />
 
 - 在菜单系统目录下新增 分类维护菜单
   - `guli-admin.sys_menu`表又多了一行，父id是刚才的商品系统id
 
-![image-20210613173132395](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613173132395.png)
+![image-20210613173132395](GuliMall.assets/image-20210613173132395.png)
 
 #### 菜单路由
 
@@ -3670,7 +3670,7 @@ localhost:8001 --> 系统管理-->菜单管理-->新增
 
 - 登录，还是报错：（出现了跨域的问题，就是说vue项目是8001端口，却要跳转到88端口，为了安全性，不可以）
 
-- ![image-20210613193702540](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613193702540.png)
+- ![image-20210613193702540](GuliMall.assets/image-20210613193702540.png)
 
 - 从8001访问88，引发CORS跨域请求，浏览器会拒绝跨域请求。具体来说当前页面是8001端口，但是要跳转88端口，这是不可以的(post请求json可以)
 
@@ -3687,7 +3687,7 @@ localhost:8001 --> 系统管理-->菜单管理-->新增
 - 所以要利用网关带的路径重写，参考
   - https://docs.spring.io/spring-cloud-gateway/docs/current/reference/html/#the-rewritepath-gatewayfilter-factory
 - 照猫画虎，在网关里写了如下，把api换成renren-fast（前面改过了）
-  ![image-20210613193503402](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613193503402.png)
+  ![image-20210613193503402](GuliMall.assets/image-20210613193503402.png)
 
 #### 注册renren-fast服务到注册中心
 
@@ -3720,7 +3720,7 @@ localhost:8001 --> 系统管理-->菜单管理-->新增
 
 3. 主启动项上添加 @EnableDiscoveryClient, 将该微服务注册到Nacos服务中心
 
-   - <img src="D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613191403001.png" alt="image-20210613191403001" style="zoom: 67%;" />
+   - <img src="GuliMall.assets/image-20210613191403001.png" alt="image-20210613191403001" style="zoom: 67%;" />
 
 
 
@@ -3730,11 +3730,11 @@ localhost:8001 --> 系统管理-->菜单管理-->新增
 
 - 跨域问题是浏览器对于 端口及以前的请求地址不同的请求不允许跨域请求, 即两个请求的 协议, 域名, 端口都必须完全相同才可以进行请求
 
-![image-20210613194419383](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613194419383.png)
+![image-20210613194419383](GuliMall.assets/image-20210613194419383.png)
 
 - 跨域的流程是发送了两个请求, 第一个为OPTIONS预检请求, 去访问服务器, 询问是否允许跨域请求, 如果服务器响应允许, 则发送真实的带数据的请求
 
-![image-20210613194618157](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613194618157.png)
+![image-20210613194618157](GuliMall.assets/image-20210613194618157.png)
 
 
 
@@ -3742,12 +3742,12 @@ localhost:8001 --> 系统管理-->菜单管理-->新增
 
 - 全部的请求通过Nginx代理, 这样所有的请求 协议 域名 端口都一致
 
-![image-20210613194642045](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613194642045.png)
+![image-20210613194642045](GuliMall.assets/image-20210613194642045.png)
 
 - 配置所有的跨域请求, 
 - 我们这里使用第二种方法
 
-![image-20210613194750573](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613194750573.png)
+![image-20210613194750573](GuliMall.assets/image-20210613194750573.png)
 
 
 
@@ -3789,17 +3789,17 @@ localhost:8001 --> 系统管理-->菜单管理-->新增
 
 3. 再次测试登录, 发现预检请求成功了, 多了我们刚才配置的请求头信息
 
-   1. ![image-20210613200027798](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613200027798.png)
+   1. ![image-20210613200027798](GuliMall.assets/image-20210613200027798.png)
 
 4. 但是真实请求失败, 因为请求头出现了重复的请求头信息, 这是因为renren-fast脚手架模块中也配置了相同的跨域请求, 我们需要将其注释掉
 
-   1. ![image-20210613200225006](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613200225006.png)
-   2. ![image-20210613200127103](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613200127103.png)
-   3. ![image-20210613200336377](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613200336377.png)
+   1. ![image-20210613200225006](GuliMall.assets/image-20210613200225006.png)
+   2. ![image-20210613200127103](GuliMall.assets/image-20210613200127103.png)
+   3. ![image-20210613200336377](GuliMall.assets/image-20210613200336377.png)
 
 5. 重新登录, 登录成功解决了所有的跨域问题
 
-   1. ![image-20210613201600431](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613201600431.png)
+   1. ![image-20210613201600431](GuliMall.assets/image-20210613201600431.png)
 
 
 
@@ -3813,7 +3813,7 @@ localhost:8001 --> 系统管理-->菜单管理-->新增
 - 但是vue项目中或者你自己写的数据库中有些是以/product为前缀的，它要请求product微服务，你要也让它请求renren-fast显然是不合适的。
 - 解决办法是把请求在网关中以更小的范围先拦截一下，剩下的请求再交给renren-fast
 
-![image-20210613210745462](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613210745462.png)
+![image-20210613210745462](GuliMall.assets/image-20210613210745462.png)
 
 - 这是因为网关上所做的路径映射不正确，映射后的路径为
 
@@ -3878,11 +3878,11 @@ localhost:8001 --> 系统管理-->菜单管理-->新增
 
 Nacos配置中心配置product服务独立的配置环境
 
-![image-20210613211643859](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613211643859.png)
+![image-20210613211643859](GuliMall.assets/image-20210613211643859.png)
 
 注册中心可以发现product服务
 
-![image-20210613213929126](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613213929126.png)
+![image-20210613213929126](GuliMall.assets/image-20210613213929126.png)
 
 
 
@@ -3892,16 +3892,16 @@ Nacos配置中心配置product服务独立的配置环境
 - 原因：先匹配的先路由，fast和product路由重叠，fast要求登录
 - 修正：在路由规则的顺序上，将精确的路由规则放置到模糊的路由规则的前面，否则的话，精确的路由规则将不会被匹配到，类似于异常体系中try catch子句中异常的处理顺序。
 
-![image-20210613212430377](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613212430377.png)
+![image-20210613212430377](GuliMall.assets/image-20210613212430377.png)
 
 - 再次访问, 可以访问并且获取数据
 
 
-![image-20210613212720580](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613212720580.png)
+![image-20210613212720580](GuliMall.assets/image-20210613212720580.png)
 
 
 
-![image-20210613212750237](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613212750237.png)
+![image-20210613212750237](GuliMall.assets/image-20210613212750237.png)
 
 
 
@@ -3909,33 +3909,33 @@ Nacos配置中心配置product服务独立的配置环境
 
 - 加上{}，把data的地方改成menus
 
-![image-20210613215347734](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613215347734.png)
+![image-20210613215347734](GuliMall.assets/image-20210613215347734.png)
 
 
 
-![image-20210613214421431](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613214421431.png)
+![image-20210613214421431](GuliMall.assets/image-20210613214421431.png)
 
 
 
-![image-20210613214513094](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613214513094.png)
+![image-20210613214513094](GuliMall.assets/image-20210613214513094.png)
 
 
 
 - 此时有了3级结构，但是没有数据，在category.vue的模板中，数据是menus，而还有一个props。这是element-ui的规则，
-- ![image-20210613215535386](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613215535386.png)
+- ![image-20210613215535386](GuliMall.assets/image-20210613215535386.png)
 
-![image-20210613214733403](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613214733403.png)
+![image-20210613214733403](GuliMall.assets/image-20210613214733403.png)
 
-![image-20210613214906980](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613214906980.png)
+![image-20210613214906980](GuliMall.assets/image-20210613214906980.png)
 
 
 
-![image-20210613215004665](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613215004665.png)
+![image-20210613215004665](GuliMall.assets/image-20210613215004665.png)
 
 - 修改后name字段成功显示在页面
 
 
-![image-20210613215035177](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613215035177.png)
+![image-20210613215035177](GuliMall.assets/image-20210613215035177.png)
 
 
 
@@ -3996,12 +3996,12 @@ Nacos配置中心配置product服务独立的配置环境
 
 - 注意这列show-checkbox即可 不需要后面的 ="true"
 
-![image-20210613232226734](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613232226734.png)
+![image-20210613232226734](GuliMall.assets/image-20210613232226734.png)
 
 - Node Data
 
 
-![image-20210613233015976](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613233015976.png)
+![image-20210613233015976](GuliMall.assets/image-20210613233015976.png)
 
 
 
@@ -4032,11 +4032,11 @@ Nacos配置中心配置product服务独立的配置环境
 
 - Service层
 
-![image-20210614000410084](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210614000410084.png)
+![image-20210614000410084](GuliMall.assets/image-20210614000410084.png)
 
 - ServiceImpl层
 
-![image-20210614000448228](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210614000448228.png)
+![image-20210614000448228](GuliMall.assets/image-20210614000448228.png)
 
 
 
@@ -4046,26 +4046,26 @@ Nacos配置中心配置product服务独立的配置环境
 
 - 全局设置逻辑删除的表示值
 
-![image-20210613234527733](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613234527733.png)
+![image-20210613234527733](GuliMall.assets/image-20210613234527733.png)
 
 - 设置需要设置成逻辑删除的字段加上@TableLogic注解 并设置删除和未删除用什么值表示
 - CategoryEntity的showStatus字段
 
-![image-20210613234933957](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613234933957.png)
+![image-20210613234933957](GuliMall.assets/image-20210613234933957.png)
 
 - @TableLogic注解
 
-![image-20210613234901382](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613234901382.png)
+![image-20210613234901382](GuliMall.assets/image-20210613234901382.png)
 
 - 日志信息, 显示删除的SQL语句
 
-![image-20210613235938630](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613235938630.png)
+![image-20210613235938630](GuliMall.assets/image-20210613235938630.png)
 
 - Postman设置
 
 
 
-![image-20210613235822437](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613235822437.png)
+![image-20210613235822437](GuliMall.assets/image-20210613235822437.png)
 
 
 
@@ -4074,7 +4074,7 @@ Nacos配置中心配置product服务独立的配置环境
 - 删除后showStatus对应字段变成0
 
 
-![image-20210613235719261](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210613235719261.png)
+![image-20210613235719261](GuliMall.assets/image-20210613235719261.png)
 
 
 
@@ -4156,7 +4156,7 @@ Nacos配置中心配置product服务独立的配置环境
 
 - 抽取代码片段vue.code-snippets
 
-![image-20210614001924383](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210614001924383.png)
+![image-20210614001924383](GuliMall.assets/image-20210614001924383.png)
 
 ```vue
 {
@@ -4241,14 +4241,14 @@ remove(node, data) {
 - remove方法的解释
 
 
-![image-20210614005807448](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210614005807448.png)
+![image-20210614005807448](GuliMall.assets/image-20210614005807448.png)
 
 - 设置删除结点后默认展开删除结点的父节点, 即将父节点设置到expandedKey数组中刷新就可以看到父节点展开了
 
-![image-20210614010011832](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210614010011832.png)
+![image-20210614010011832](GuliMall.assets/image-20210614010011832.png)
 
 - data中对应的属性
-  - ![image-20210614010140521](D:\Side_Project\GuLiMall_AtGuiGu\Project_GuliMall\GuliMall.assets\image-20210614010140521.png)
+  - ![image-20210614010140521](GuliMall.assets/image-20210614010140521.png)
 
 - Messagebox
 
@@ -4257,65 +4257,263 @@ https://element.eleme.cn/#/zh-CN/component/message-box
 
 
 
+### P52 新增 新增效果完成
+
+- 实现点击新增按钮弹出对话框
+
+- 对话框
+
+https://element.eleme.cn/#/zh-CN/component/dialog
+
+- 一个button的单击事件函数为@click=“dialogVisible = true”
+- 一个会话的属性为:visible.sync=“dialogVisible”
+- 导出的data中"dialogVisible = false"
+- 点击确认或者取消后的逻辑都是@click=“dialogVisible = false” 关闭会话而已
+  
+
+```vue
+<el-dialog title="提示" :visible.sync="dialogVisible" width="30%">
+    <el-form :model="category">
+        <el-form-item label="分类名称">
+            <el-input v-model="category.name" autocomplete="off"></el-input>
+        </el-form-item>
+    </el-form>
+
+    <span slot="footer" class="dialog-footer">
+        <el-button @click="dialogVisible = false">取 消</el-button>
+        <el-button type="primary" @click="addCategory">确 定</el-button>
+    </span>
+</el-dialog>
+<script>
+export default {
+  //import引入的组件需要注入到对象中才能使用
+  components: {},
+  data() {
+    return {
+      category: { name: "", parentCid: 0, catLevel: 0, showStatus: 1, sort: 0 },
+      dialogVisible: false,
+      menus: [],
+      expandedKey: [],
+      defaultProps: {
+        children: "children", //數據的子節點
+        label: "name", //要顯示的字段
+      },
+    };
+  },
+    methods: {
+        //添加三级分类的方法
+        addCategory() {
+            console.log("提交的三级分类的数据", this.category);
+            this.$http({
+                url: this.$http.adornUrl("/product/category/save"),
+                method: "post",
+                data: this.$http.adornData(this.category, false),
+            }).then(({ data }) => {
+                this.$message({
+                    message: "菜单保存成功",
+                    type: "success",
+                });
+                //保存成功后, 关闭对话框
+                this.dialogVisible = false;
+                //刷新出新的菜单
+                this.getMenus();
+                //设置需要默认展开的菜单
+                this.expandedKey = [this.category.parentCid];
+            });
+        },
+        append(data) {
+            console.log("append", data);
+            this.dialogVisible = true;
+            this.category.parentCid = data.catId;
+            this.category.catLevel = data.catLevel * 1 + 1;
+        },
+```
+
+
+
+- dialog组件
+
+![image-20210614210811392](GuliMall.assets/image-20210614210811392.png)
+
+- dialog相关数据
+
+![image-20210614210923853](GuliMall.assets/image-20210614210923853.png)
+
+- 点击确定执行的 addCategory()
+- 保存成功后
+  1. 设置信息输入框消失
+  2. 刷新数据
+  3. 确定要显示的三级分类为当前添加的category对象的父节点
+
+![image-20210614211322973](GuliMall.assets/image-20210614211322973.png)
+
+
+
+- 点击append弹出对话框
+
+![image-20210614202449432](GuliMall.assets/image-20210614202449432.png)
+
+
+
+- 提交后控制台显示了添加的category对象的name为我们输入的信息
+
+![image-20210614203155271](GuliMall.assets/image-20210614203155271.png)
+
+
+
+- 给了category对象一些默认属性以及计算后的属性
+
+![image-20210614204009535](GuliMall.assets/image-20210614204009535.png)
+
+
+
+- 添加成功,显示消息提示框
+
+
+![image-20210614205747217](GuliMall.assets/image-20210614205747217.png)
+
+- 数据库得到数据
+
+![image-20210614205837442](GuliMall.assets/image-20210614205837442.png)
+
+
+
+### P53 修改 基本修改效果完成
+
+>- 点击修改弹出对话框, 显示现有内容
+>- 输入新内容后确定, 
+>  - 同时弹出修改成功的提示
+>  - 对应修改的对话框的父节点展开, 
+>  - 并且从数据库获取修改后的数据显示出来, 
+>- 对话框是复用的添加的对话框, 点击确定回调的是同一个函数 submitData
+>  - 为了区分当前是修改还是添加, 添加一个dialogType, title属性
+>  - dialogType决定继续调用哪个函数 通过if判断
+>    - editCategory()
+>    - addCategory()
+>  - title决定对话框左上角显示的信息 "添加分类"/"修改分类"
+>- 回显的时候要发送请求, 获取最新的数据库数据而不是上一次获得的, 防止中间数据库信息以及被别的用户修改了
+>
+>
+
+
+
+- el-dialog 新增了 三个表单分别对应 name icon productUnit
+- 同时修改点击确定执行的方法为submitData再在submitData中通过dialogType判断执行修改还是删除
+
+```vue
+<el-dialog
+      :title="title"
+      :visible.sync="dialogVisible"
+      width="30%"
+      :close-on-click-modal="false"
+    >
+      <el-form :model="category">
+        <el-form-item label="分类名称">
+          <el-input v-model="category.name" autocomplete="off"></el-input>
+        </el-form-item>
+      </el-form>
+      <el-form :model="category">
+        <el-form-item label="图标">
+          <el-input v-model="category.icon" autocomplete="off"></el-input>
+        </el-form-item>
+      </el-form>
+      <el-form :model="category">
+        <el-form-item label="计量单位">
+          <el-input
+            v-model="category.productUnit"
+            autocomplete="off"
+          ></el-input>
+        </el-form-item>
+      </el-form>
+
+      <span slot="footer" class="dialog-footer">
+        <el-button @click="dialogVisible = false">取 消</el-button>
+        <el-button type="primary" @click="submitData">确 定</el-button>
+      </span>
+    </el-dialog>
+```
+
+- submitData 和 editCategory
+
+```vue
+<script>
+    submitData() {
+        if (this.dialogType == "add") {
+            this.addCategory();
+        }
+        if (this.dialogType == "edit") {
+            this.editCategory();
+        }
+    },
+    //点击edit, 输入修改的信息, 点击确定执行的方法
+        editCategory() {
+            //{}解构出我们需要向后台更新的信息属性
+            var { catId, name, icon, productUnit } = this.category;
+            //将解构出来的信息再封装成一个属性 key与后台对应的java bean属性一致, 值就是解构出来的值
+            // var data = {catId: catId, name: name, icon: icon, productUnit: productUnit};
+            //因为key value相同, 可以省略
+            //直接将大括号内的内容放到后面的data中
+            // var data = {catId, name, icon, productUnit};
+            this.$http({
+                url: this.$http.adornUrl("/product/category/update"),
+                method: "post",
+                data: this.$http.adornData({ catId, name, icon, productUnit }, false),
+            }).then(({ data }) => {
+                this.$message({
+                    message: "菜单修改成功",
+                    type: "success",
+                });
+                //保存成功后, 关闭对话框
+                this.dialogVisible = false;
+                //刷新出新的菜单
+                this.getMenus();
+                //设置需要默认展开的菜单
+                //这里的category是我们从对后台的请求中获取的, 我们在回显信息中加了parentCid 所以这里直接显示父级菜单即可
+                this.expandedKey = [this.category.parentCid];
+            });
+        },
+```
+
+
+
+![image-20210614222033823](GuliMall.assets/image-20210614222033823.png)
+
+- 点击edit 回显分类的信息
+
+
+![image-20210614222154797](GuliMall.assets/image-20210614222154797.png)
+
+- 修改append方法获得的category其他信息, 将其置为默认值或空
+
+![image-20210614222335744](GuliMall.assets/image-20210614222335744.png)
+
+
+
+- 按照点击的按钮不同显示不同的提示操作信息
+
+
+![image-20210614213504200](GuliMall.assets/image-20210614213504200.png)
+
+- 修改-->输入信息-->点击确定
+
+
+![image-20210614215407354](GuliMall.assets/image-20210614215407354.png)
+
+
+
+- 修改的SQL
+
+![image-20210614215216097](GuliMall.assets/image-20210614215216097.png)
 
 
 
 
 
+### P54 修改 拖拽效果
 
+- 可拖拽结点
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+https://element.eleme.cn/#/zh-CN/component/tree
 
 
 
