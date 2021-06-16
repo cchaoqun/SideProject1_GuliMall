@@ -8,6 +8,11 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848 #配置nacos注册中心的地址
+    alicloud: #阿里云子用户OSS账户信息
+      access-key: LTAI5tD6dTxvDiNPyxMqvQMs
+      secret-key: oIaVClnxVmromcsMnGyxatqqwfWUyP
+      oss:
+        endpoint: oss-cn-shanghai.aliyuncs.com
   application:
     name: gulimall-product #配置服务的名称
 

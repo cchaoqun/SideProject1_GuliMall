@@ -5,6 +5,11 @@ Java:
 centOS: 7
 mysql: 5.7
 redis: 
+
+阿里云子用户
+gulimall gulimall
+access-key: LTAI5tD6dTxvDiNPyxMqvQMs
+secret-key: oIaVClnxVmromcsMnGyxatqqwfWUyP
 ```
 
 
@@ -4269,7 +4274,6 @@ https://element.eleme.cn/#/zh-CN/component/dialog
 - 一个会话的属性为:visible.sync=“dialogVisible”
 - 导出的data中"dialogVisible = false"
 - 点击确认或者取消后的逻辑都是@click=“dialogVisible = false” 关闭会话而已
-  
 
 ```vue
 <el-dialog title="提示" :visible.sync="dialogVisible" width="30%">
@@ -4519,13 +4523,45 @@ https://element.eleme.cn/#/zh-CN/component/tree
 
 
 
+## 品牌管理
 
 
 
+- 阿里云OSS存储
+
+https://github.com/alibaba/aliyun-spring-boot/tree/master/aliyun-spring-boot-samples/aliyun-oss-spring-boot-sample
+
+- OSS starter依赖
+
+```xml
+
+```
+
+- OSS对象存储上传服务
+
+  1. 引入OSS starter 依赖
+
+     1. ```xml
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alicloud-oss</artifactId>
+            <version>2.1.0.RELEASE</version>
+        </dependency>
+        ```
+
+  2. 配置 key secret endpoint
+
+     1. ![image-20210616000233815](GuliMall.assets/image-20210616000233815.png)
+
+  3. Autowired引入OSSClient
+
+     1. ![image-20210616000300150](GuliMall.assets/image-20210616000300150.png)
 
 
 
+- 后端签名后前端直传服务器
 
+https://help.aliyun.com/document_detail/91868.htm?spm=a2c4g.11186623.2.10.bf997d9cAFK16w#concept-ahk-rfz-2fb
 
 
 
