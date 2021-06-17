@@ -10,6 +10,9 @@ redis:
 gulimall gulimall
 access-key: LTAI5tD6dTxvDiNPyxMqvQMs
 secret-key: oIaVClnxVmromcsMnGyxatqqwfWUyP
+
+接口文档
+https://easydoc.net/s/78237135/ZUqEdvA4/hKJTcbfd
 ```
 
 
@@ -4566,6 +4569,8 @@ https://help.aliyun.com/document_detail/91868.htm?spm=a2c4g.11186623.2.10.bf997d
 
 
 
+
+## SPU&SKU
 
 
 

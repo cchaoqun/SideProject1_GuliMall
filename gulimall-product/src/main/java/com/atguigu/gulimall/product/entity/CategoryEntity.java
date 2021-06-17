@@ -9,6 +9,8 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import lombok.Data;
 
 /**
@@ -67,6 +69,7 @@ public class CategoryEntity implements Serializable {
 	 *      * 是否为数据库表字段
 	 *      * 默认 true 存在，false 不存在
 	 */
+	@JsonInclude(Include.NON_EMPTY)
 	@TableField(exist=false)
 	private List<CategoryEntity> children;
 
