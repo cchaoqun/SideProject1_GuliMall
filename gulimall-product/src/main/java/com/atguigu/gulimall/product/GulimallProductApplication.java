@@ -4,6 +4,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * 1. 整合Mybatis-Plus
@@ -53,6 +54,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  *
  *
  */
+@EnableFeignClients(basePackages = "com.atguigu.gulimall.product.feign")
 @EnableDiscoveryClient //开启服务的注册与发现
 @MapperScan("com.atguigu.gulimall.product.dao") //告诉mybatis-plus在这个路径找到我们的Mapper接口
 @SpringBootApplication
